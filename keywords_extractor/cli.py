@@ -2,7 +2,7 @@
 
 """Console script for keywords_extractor."""
 import sys
-import click
+#import click
 
 
 @click.command()
