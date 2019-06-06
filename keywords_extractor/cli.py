@@ -5,12 +5,12 @@ import sys
 #import click
 
 
-@click.command()
+#@click.command()
 def main(args=None):
-    """Console script for keywords_extractor."""
-    click.echo("Replace this message by putting your code into "
-               "keywords_extractor.cli.main")
-    click.echo("See click documentation at http://click.pocoo.org/")
+#    """Console script for keywords_extractor."""
+#    click.echo("Replace this message by putting your code into "
+#               "keywords_extractor.cli.main")
+#    click.echo("See click documentation at http://click.pocoo.org/")
     return 0
 
 
