@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
-
+"""Sample cli app."""
 import sys
-
-
 
 
 def main(args=None):
