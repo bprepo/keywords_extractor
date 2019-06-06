@@ -1,5 +1,5 @@
 Welcome to keywords_extractor's documentation!
-======================================
+==============================================
 
 .. toctree::
    :maxdepth: 2
