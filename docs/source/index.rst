@@ -7,7 +7,6 @@ Welcome to keywords_extractor's documentation!
 
    installation
    usage
-   modules
    contributing
    authors
 
