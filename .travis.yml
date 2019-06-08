@@ -4,12 +4,15 @@ language: python
 cache: pip
 before_script:
 - pip install tox
+- python -m spacy download en
 
 # Command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
 # install: pip install -U tox-travis don't know if needed
 
 # Command to run tests, e.g. python setup.py test
-script: tox
+script: 
+  - tox
+  - pytest
 notifications:
   on_success: change
   on_failure: always
