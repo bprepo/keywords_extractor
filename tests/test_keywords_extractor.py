@@ -4,6 +4,7 @@
 """Tests for `keywords_extractor` package."""
 import pytest
 
+
 @pytest.fixture
 def response():
     """Sample pytest fixture.

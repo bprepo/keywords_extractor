@@ -6,8 +6,11 @@ import pytest
 from summa import keywords
 
 
-def test_if_keywords():
-    """Test if there are keywords"""
-    text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+@pytest.mark.parametrize(
+    text,
+    u"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+)
+def test_if_keywords(text):
+    """Test if there are keywords."""
     assert len(keywords.keywords(text)) > 0
 
