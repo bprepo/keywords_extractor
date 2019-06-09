@@ -24,5 +24,5 @@ def test_content(response):
 
 @pytest.fixture(scope="session")
 def en_tokenizer():
-    """Check if spacy is installed properly"""
+    """Check if spacy is installed properly."""
     return get_lang_class("en").Defaults.create_tokenizer()
