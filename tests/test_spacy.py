@@ -22,7 +22,7 @@ def en_tokenizer():
 )
 def test_sentence_tokenization(text):
     """Check if sentence is tokenized properly."""
-    nlp = spacy.load("en_core_web_sm")
+    nlp = spacy.load("en")
     doc = nlp(text)
     sents = list(doc.sents)
     assert len(sents) == 2
