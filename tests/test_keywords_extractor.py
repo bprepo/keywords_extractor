@@ -1,21 +1,23 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""Tests for `keywords_extractor` package."""
+"""Tests for `textrank` functionality."""
 import pytest
+import RAKE
+from summa import keywords
 
 
-@pytest.fixture
-def response():
-    """Sample pytest fixture.
-
-    See more at: http://doc.pytest.org/en/latest/fixture.html
-    """
-    # import requests
-    # return requests.get('https://github.com/audreyr/cookiecutter-pypackage')
-
-
-def test_content(response):
-    """Sample pytest test function with the pytest fixture as an argument."""
-    # from bs4 import BeautifulSoup
-    # assert 'GitHub' in BeautifulSoup(response.content).title.string
+@pytest.mark.parametrize(
+    "text",
+    [
+        """Lorem ipsum dolor sit amet,
+    consectetur adipiscing elit, sed do
+    eiusmod tempor incididunt ut labore
+    et dolore magna aliqua."""
+    ],
+)
+def test_if_keywords(text):
+    """Test if there are keywords."""
+    assert len(keywords.keywords(text)) > 0
+    rake = RAKE.Rake(RAKE.SmartStopList())
+    assert len(rake.run(text, minCharacters=1, maxWords=1, minFrequency=1)) > 0

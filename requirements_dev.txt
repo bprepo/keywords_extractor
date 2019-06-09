@@ -4,6 +4,7 @@ flake8>=3.5.0
 pytest>=3.8.2
 pytest-runner>=4.2
 pip>=18.1
+python-rake>=1.4.5
 spacy>=2.1.4
 Sphinx>=1.8.1
 sphinx-rtd-theme>=0.4.3
