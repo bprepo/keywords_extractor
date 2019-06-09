@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 
 """Tests for `spacy` functionality."""
+import en_core_web_sm
 import pytest
-import spacy
 from spacy.util import get_lang_class
 
 
@@ -22,7 +22,7 @@ def en_tokenizer():
 )
 def test_sentence_tokenization(text):
     """Check if sentence is tokenized properly."""
-    nlp = spacy.load("en")
+    nlp = en_core_web_sm.load()
     doc = nlp(text)
     sents = list(doc.sents)
     assert len(sents) == 2
