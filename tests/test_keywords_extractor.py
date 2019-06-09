@@ -3,8 +3,8 @@
 
 """Tests for `keywords_extractor` package."""
 import pytest
-from spacy.tokenizer import Tokenizer
 from spacy.util import get_lang_class
+
 
 @pytest.fixture
 def response():
@@ -21,6 +21,8 @@ def test_content(response):
     # from bs4 import BeautifulSoup
     # assert 'GitHub' in BeautifulSoup(response.content).title.string
 
+
 @pytest.fixture(scope="session")
 def en_tokenizer():
+    """Check if spacy is installed properly"""
     return get_lang_class("en").Defaults.create_tokenizer()
