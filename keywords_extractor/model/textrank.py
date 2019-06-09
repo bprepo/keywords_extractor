@@ -5,5 +5,5 @@ from summa import keywords
 
 
 def process_with_textrank(text):
-    """Function to process text rank with full text."""
+    """Function for keyword extraction."""
     return keywords.keywords(text)
