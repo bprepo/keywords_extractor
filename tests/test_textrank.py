@@ -9,5 +9,5 @@ from summa import keywords
 def test_if_keywords():
     """Test if there are keywords"""
     text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    assert len(keywords.keywords(text)) > 0 
+    assert len(keywords.keywords(text)) > 0
 
