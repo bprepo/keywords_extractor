@@ -4,10 +4,9 @@
 """Tests for `spacy` functionality."""
 import pytest
 import spacy
-from spacy.util import get_lang_class
 
 
-@pytest.mark.parametrize("text", u"This is a sentence. This is another sentence.")
+@pytest.mark.parametrize("text", [u"This is a sentence. This is another sentence."])
 def test_sentence_tokenization(text):
     """Check if sentence is tokenized properly"""
     nlp = spacy.load("en")

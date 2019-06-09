@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """Textrank module."""
 
 from summa import keywords
