@@ -11,8 +11,6 @@ before_script:
 # Command to run tests, e.g. python setup.py test
 script: 
   - tox
-  - python -m spacy download en
-  - pytest
 notifications:
   on_success: change
   on_failure: always
