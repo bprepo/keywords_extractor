@@ -4,8 +4,9 @@
 """Tests for `textrank` functionality."""
 import pytest
 import RAKE
-from summa import keywords
 from gensim.summarization import keywords as gen_keywords
+from summa import keywords
+
 
 
 @pytest.mark.parametrize(
