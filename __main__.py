@@ -13,6 +13,7 @@ def main(args=None):
     project_path = os.path.dirname(os.path.abspath(__file__))
     file_path = os.path.join(project_path, "data", "test_data.txt")
     doc = preprocess(file_path, "en")
+    print(doc.text)
     for sent in doc.sents:
         print(sent)
     print(process_with_textrank(doc.text))
