@@ -14,3 +14,4 @@ twine>=1.12.1
 watchdog>=0.9.0
 wheel>=0.32.1
 https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.1.0/en_core_web_sm-2.1.0.tar.gz#egg=en_core_web_sm
+fasttext>=0.8.3
