@@ -5,6 +5,7 @@
 import pytest
 import RAKE
 from summa import keywords
+from gensim.summarization import keywords as gen_keywords
 
 
 @pytest.mark.parametrize(
@@ -21,3 +22,4 @@ def test_if_keywords(text):
     assert len(keywords.keywords(text)) > 0
     rake = RAKE.Rake(RAKE.SmartStopList())
     assert len(rake.run(text, minCharacters=1, maxWords=1, minFrequency=1)) > 0
+    assert len(gen_keywords(text)) > 0

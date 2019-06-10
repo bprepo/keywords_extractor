@@ -1,6 +1,7 @@
 bumpversion>=0.5.3
 coverage>=4.5.1
 flake8>=3.5.0
+gensim>=3.7.3
 pytest>=3.8.2
 pytest-runner>=4.2
 pip>=18.1
