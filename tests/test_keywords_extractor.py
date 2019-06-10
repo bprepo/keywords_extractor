@@ -2,11 +2,10 @@
 # -*- coding: utf-8 -*-
 
 """Tests for `textrank` functionality."""
+from gensim.summarization import keywords as gen_keywords
 import pytest
 import RAKE
-from gensim.summarization import keywords as gen_keywords
 from summa import keywords
-
 
 
 @pytest.mark.parametrize(
